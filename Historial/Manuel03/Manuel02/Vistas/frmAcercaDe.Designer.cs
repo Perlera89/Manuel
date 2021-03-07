@@ -48,9 +48,9 @@ namespace Manuel02
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(611, 474);
+            this.pictureBox1.Size = new System.Drawing.Size(949, 512);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -59,7 +59,7 @@ namespace Manuel02
             // 
             this.facebook.Cursor = System.Windows.Forms.Cursors.Hand;
             this.facebook.Image = ((System.Drawing.Image)(resources.GetObject("facebook.Image")));
-            this.facebook.Location = new System.Drawing.Point(15, 12);
+            this.facebook.Location = new System.Drawing.Point(982, 33);
             this.facebook.Name = "facebook";
             this.facebook.Size = new System.Drawing.Size(32, 32);
             this.facebook.TabIndex = 1;
@@ -69,7 +69,7 @@ namespace Manuel02
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(53, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(982, 91);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.TabIndex = 2;
@@ -79,7 +79,7 @@ namespace Manuel02
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(91, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(982, 155);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.TabIndex = 3;
@@ -89,7 +89,7 @@ namespace Manuel02
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(129, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(982, 214);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 32);
             this.pictureBox4.TabIndex = 4;
@@ -99,7 +99,8 @@ namespace Manuel02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 471);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.ClientSize = new System.Drawing.Size(1059, 511);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);

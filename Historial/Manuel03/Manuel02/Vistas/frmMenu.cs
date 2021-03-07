@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Calculadora;
 
 namespace Manuel02
 {
@@ -35,12 +36,12 @@ namespace Manuel02
             frm.Show();
         }
 
-        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmListaUsuarioVisual frm = new frmListaUsuarioVisual();
-            frm.MdiParent = this;
-            frm.Show();
-        }
+        //private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    frmListaUsuarioVisual frm = new frmListaUsuarioVisual();
+        //    frm.MdiParent = this;
+        //    frm.Show();
+        //}
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -102,7 +103,7 @@ namespace Manuel02
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new frmListaUsuarioVisual());
+            AbrirFormHijo(new frmUsuarios());
         }
 
         private void btnAcercade_Click(object sender, EventArgs e)
@@ -118,6 +119,11 @@ namespace Manuel02
         private void frmMenu_Load(object sender, EventArgs e)
         {
             pictureBox1_Click(null, e);
+        }
+
+        private void btnOperaciones_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new frmCalculadora());
         }
     }
 }

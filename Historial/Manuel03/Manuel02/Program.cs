@@ -17,7 +17,7 @@ namespace Manuel02
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmEntidades());
+            Application.Run(new frmMenu());
         }
     }
 }

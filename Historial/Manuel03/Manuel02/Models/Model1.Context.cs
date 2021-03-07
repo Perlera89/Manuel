@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Manuel02.Modelo
+namespace Manuel02.Models
 {
     using System;
     using System.Data.Entity;
