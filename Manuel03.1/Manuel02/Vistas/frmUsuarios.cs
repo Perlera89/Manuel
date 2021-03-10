@@ -17,17 +17,26 @@ namespace Manuel02.Vistas
         {
             InitializeComponent();
             Cargar();
+            Clean();
             
+        }
+        void Clean()
+        {
+            txtId.Clear();
+            txtUsuario.Clear();
+            txtApellido.Clear();
+            txtEdad.Clear();
+            txtPass.Clear();
         }
         void Cargar()
         {
-            dataGridView2.Rows.Clear();
+            dtgListaUsuarios.Rows.Clear();
             using (programacionEntities db = new programacionEntities())
             {
                 var lista = db.UserList.ToList();
                 foreach (var iteracion in lista)
                 {
-                    dataGridView2.Rows.Add(iteracion.Id, iteracion.NombreUsuario, iteracion.Apellido, iteracion.Edad, iteracion.Pass);
+                    dtgListaUsuarios.Rows.Add(iteracion.Id, iteracion.NombreUsuario, iteracion.Apellido, iteracion.Edad, iteracion.Pass);
                 }
             }
         }
@@ -63,6 +72,7 @@ namespace Manuel02.Vistas
                     }
 
                 Cargar();
+                Clean();
 
             } 
         }
@@ -98,6 +108,7 @@ namespace Manuel02.Vistas
                 }
 
                 Cargar();
+                Clean();
             }
         }
 
@@ -128,12 +139,33 @@ namespace Manuel02.Vistas
                 }
 
                 Cargar();
+                Clean();
             }
         }
 
         private void frmUsuarios_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void dtgListaUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            String Id = dtgListaUsuarios.CurrentRow.Cells[0].Value.ToString();
+            String Nombre = dtgListaUsuarios.CurrentRow.Cells[1].Value.ToString();
+            String Apellido = dtgListaUsuarios.CurrentRow.Cells[2].Value.ToString();
+            String Edad = dtgListaUsuarios.CurrentRow.Cells[3].Value.ToString();
+            String Pass = dtgListaUsuarios.CurrentRow.Cells[4].Value.ToString();
+
+            txtId.Text = Id;
+            txtUsuario.Text = Nombre;
+            txtApellido.Text = Apellido;
+            txtEdad.Text = Edad;
+            txtPass.Text = Pass;
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Clean();
         }
     }
 }
