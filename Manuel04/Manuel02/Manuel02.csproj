@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\CDUserList.cs" />
     <Compile Include="DAO\ClsListaUsuario.cs" />
     <Compile Include="Dominio\Atributos.cs" />
     <Compile Include="Dominio\Entidades.cs" />
@@ -89,12 +90,6 @@
     <Compile Include="Vistas\frmCalculadora.Designer.cs">
       <DependentUpon>frmCalculadora.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\frmFoco.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\frmFoco.Designer.cs">
-      <DependentUpon>frmFoco.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,9 +122,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\frmCalculadora.resx">
       <DependentUpon>frmCalculadora.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\frmFoco.resx">
-      <DependentUpon>frmFoco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
